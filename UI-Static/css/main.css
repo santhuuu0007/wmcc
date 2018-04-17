@@ -40,7 +40,7 @@ a:focus {
   outline: none;
 }
 #header {
-  position: fixed;
+  /*position: fixed;*/
   top: 0;
   left: 0;
   width: 100%;
@@ -87,6 +87,7 @@ a:focus {
   -o-animation: scaleUp 400ms;
   -ms-animation: scaleUp 400ms;
   animation: scaleUp 400ms;
+  margin-top: 0;
 }
 #main-slider .prev,
 #main-slider .next {
@@ -119,6 +120,18 @@ a:focus {
   text-shadow: 0 3px rgba(0, 0, 0, 0.1);
   color: #fff;
 }
+.carousel-content .lead{
+  margin-bottom: 12px;
+}
+.navbar{
+  margin-bottom: 0;
+}
+.navbar.fixed{
+  position: fixed;
+  top: 0;
+  width: 79.2%;
+}
+
 #contact .box {
   background-color: #555;
   color: #FFF;
