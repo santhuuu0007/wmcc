@@ -52,4 +52,17 @@ jQuery(function($) {
 			return false;
 		});
 	});
+
+	var num = 125; //number of pixels before modifying styles
+
+	$("document").ready(function(){
+		$(window).bind('scroll', function () {
+    		if ($(window).scrollTop() > num) {
+				console.log($('#navbar'));
+        		$('#navbar').addClass('fixed');
+    		} else {
+        		$('#navbar').removeClass('fixed');
+    		}
+		});
+	});
 });
